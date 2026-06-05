@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+</head>
+
+<body>
+
+<h1>Diabetes Prediction System</h1>
+
+<form action="/predict" method="post">
+
+    Pregnancies:
+    <input type="text" name="pregnancies"><br><br>
+
+    Glucose:
+    <input type="text" name="glucose"><br><br>
+
+    Blood Pressure:
+    <input type="text" name="bp"><br><br>
+
+    Skin Thickness:
+    <input type="text" name="skin"><br><br>
+
+    Insulin:
+    <input type="text" name="insulin"><br><br>
+
+    BMI:
+    <input type="text" name="bmi"><br><br>
+
+    Diabetes Pedigree Function:
+    <input type="text" name="dpf"><br><br>
+
+    Age:
+    <input type="text" name="age"><br><br>
+
+    <button type="submit">
+        Predict
+    </button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
